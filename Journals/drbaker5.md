@@ -21,21 +21,71 @@
 ---
 
 ## Week 1
-**Dates**: [Insert Dates]  
+**Dates**: [9/9-9/13]  
 **Goals for the Week**:
-- Research sensors for water flow and quality.
-- Familiarize with hardware design and available components.
+- Identify high level design of the project
+- Start first draft of project proposal
+- Meet with Mentor TA
 
 **Tasks Completed**:
-- Identified possible water sensors (e.g., flow meters, TDS sensors).
-- Drafted initial system block diagram.
+- Met with Mentor TA
+- Created high level block diagram for design of project
+- Made three high level requirements for the design
+- Started first draft of project proposal
+
+**Challenges**:
+- Understanding ultrasonic sensor's datasheet and how to integrate it in the project
+
+**Next Steps**:
+- Drill down design and finish first draft of project proposal
+
+## Week 2
+**Dates**: [9/16-9/20]  
+**Goals for the Week**:
+- Finalize all parts and design
+- Submit finished project proposal
+
+**Tasks Completed**:
+- Finalized first draft of design
+- Submitted project proposal
+
+**Challenges**:
+- Our project requires many systems that we have little or no experience with, so it was hard to create detailed diagrams and requirements for those unfamiliar systems. 
+
+**Next Steps**:
+- Meet with Mentor TA to finalize and correct project proposal
+
+## Week 3
+**Dates**: [9/23-9/27]  
+**Goals for the Week**:
+- Meet with Mentor TA to finalize and correct project proposal
+- Correct project proposal to reflect changes TA suggests
+
+**Tasks Completed**:
+- Met with Mentor TA
+- Created more specific subsystem requirments with detailed unit tests for each
+- Created quantifiable high level design requirements
+
+**Challenges**:
+- Creating specific unit tests for high level software components when we haven't made them yet
+
+**Next Steps**:
+- Submit revised project proposal, work on design document
+
+## Week 1
+**Dates**: [9/30-10/4]  
+**Goals for the Week**:
+- Submit revised project proposal
+- Finish and submit design document
+
+**Tasks Completed**:
+-
 
 **Challenges**:
 - Finding sensors that fit within budget constraints.
 
 **Next Steps**:
-- Purchase sensors and start testing on breadboard.
-
+- 
 ---
 
 ## Final Reflection

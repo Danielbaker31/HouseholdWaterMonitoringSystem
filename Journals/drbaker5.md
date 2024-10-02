@@ -72,7 +72,7 @@
 **Next Steps**:
 - Submit revised project proposal, work on design document
 
-## Week 1
+## Week 4
 **Dates**: [9/30-10/4]  
 **Goals for the Week**:
 - Submit revised project proposal

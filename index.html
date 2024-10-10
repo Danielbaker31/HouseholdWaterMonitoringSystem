@@ -94,56 +94,40 @@
     </div>
 
     <script>
-        async function fetchAndDisplayData() {
-            const loadingDiv = document.getElementById('loading');
-            const errorDiv = document.getElementById('error');
-            const dataTable = document.getElementById('data-table');
-            const tableBody = document.getElementById('data-table-body');
+        async function fetchData() {
+        try {
+            const response = await fetch('https://arj74ctnbi.execute-api.us-east-2.amazonaws.com/dev/waterusage', {
+                method: 'GET',
+            });
 
-            loadingDiv.style.display = 'block';
-            dataTable.style.display = 'none';
-            errorDiv.innerHTML = ''; // Clear previous errors
+            const data = await response.json();  // Try parsing JSON
+            console.log("API response: ", data);  // Log the raw API response
 
-            try {
-                const response = await fetch('https://arj74ctnbi.execute-api.us-east-2.amazonaws.com/dev/waterusage');
-                
-                // Check for HTTP errors
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-
-                const data = await response.json();
-
-                // Log the response for debugging purposes
-                console.log("API Response:", data);
-
-                // Ensure data contains Items
-                if (data && data.Items) {
-                    tableBody.innerHTML = ''; // Clear previous table rows
-
-                    // Loop through each item and create table rows
-                    data.Items.forEach(item => {
-                        const row = document.createElement('tr');
-                        row.innerHTML = `
-                            <td>${item.DeviceID}</td>
-                            <td>${item.Timestamp}</td>
-                            <td>${item.WaterUsed}</td>
-                        `;
-                        tableBody.appendChild(row);
-                    });
-
-                    // Show the table after data is loaded
-                    dataTable.style.display = 'table';
-                } else {
-                    errorDiv.innerHTML = "No data available or wrong format.";
-                }
-            } catch (error) {
-                console.error('Error fetching data:', error);
-                errorDiv.innerHTML = `Error fetching data: ${error.message}`;
-            } finally {
-                loadingDiv.style.display = 'none'; // Hide loading indicator
+            // Assuming the data you're looking for is in a specific field
+            if (data && data.Items) {  // Adjust this based on the actual response structure
+                console.log("Parsed data: ", data.Items);  // Log the parsed data
+                const dataDisplay = document.getElementById('data-display');
+                dataDisplay.innerHTML = '';  // Clear previous entries
+                data.Items.forEach(item => {
+                    const container = document.createElement('div');
+                    container.classList.add('item-container');
+                    container.innerHTML = `
+                        <p><strong>Device ID:</strong> ${item.DeviceID}</p>
+                        <p><strong>Timestamp:</strong> ${item.Timestamp}</p>
+                        <p><strong>Water Used:</strong> ${item.WaterUsed}</p>
+                    `;
+                    dataDisplay.appendChild(container);
+                });
+            } else {
+                throw new Error("Unexpected data structure");
             }
+        } catch (error) {
+            console.error('Error fetching data:', error.message);
+            const errorDisplay = document.getElementById('error');
+            errorDisplay.textContent = 'Error fetching data: ' + error.message;
         }
+    }
+
 
         // Call the fetchAndDisplayData function once the page loads
         window.onload = fetchAndDisplayData;

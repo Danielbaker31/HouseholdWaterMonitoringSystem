@@ -44,7 +44,7 @@
             .then(data => {
                 alert('User registered successfully!');
                 localStorage.setItem('UserID', data.UserID);  // Store the UserID
-                window.location.href = 'device-registration.html';  // Redirect to device registration
+                window.location.href = 'deviceRegistration.html';  // Redirect to device registration
             })
             .catch(error => {
                 console.error('Error registering user:', error);

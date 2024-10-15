@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Devices</title>
+</head>
+<body>
+    <h1>Register Your Devices</h1>
+    
+    <form id="deviceForm">
+        <label for="deviceName">Device Name:</label>
+        <input type="text" id="deviceName" name="deviceName" required><br>
+
+        <label for="innerDiameter">Inner Pipe Diameter:</label>
+        <input type="text" id="innerDiameter" name="innerDiameter" required><br>
+
+        <label for="outerDiameter">Outer Pipe Diameter:</label>
+        <input type="text" id="outerDiameter" name="outerDiameter" required><br>
+
+        <label for="ssid">Wi-Fi SSID:</label>
+        <input type="text" id="ssid" name="ssid" required><br>
+
+        <label for="password">Wi-Fi Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <button type="submit">Register Device</button>
+    </form>
+
+    <div id="deviceCount">
+        <p>Registered 0 of 3 devices.</p>
+    </div>
+
+    <script>
+        let deviceCounter = 0;  // Track how many devices are registered
+        const maxDevices = 3;  // Number of devices the user needs to register
+
+        document.getElementById('deviceForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const userID = localStorage.getItem('UserID');  // Retrieve the UserID
+            const deviceName = document.getElementById('deviceName').value;
+            const innerDiameter = document.getElementById('innerDiameter').value;
+            const outerDiameter = document.getElementById('outerDiameter').value;
+            const ssid = document.getElementById('ssid').value;
+            const password = document.getElementById('password').value;
+
+            fetch('https://arj74ctnbi.execute-api.us-east-2.amazonaws.com/dev/registerDevice', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    userID: userID,
+                    deviceName: deviceName,
+                    innerDiameter: innerDiameter,
+                    outerDiameter: outerDiameter,
+                    ssid: ssid,
+                    password: password
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Device registered successfully!');
+                deviceCounter++;
+
+                if (deviceCounter < maxDevices) {
+                    document.getElementById('deviceCount').innerHTML = `<p>Registered ${deviceCounter} of ${maxDevices} devices. Please register the next device.</p>`;
+                    // Clear the form for the next device
+                    document.getElementById('deviceForm').reset();
+                } else {
+                    alert('All devices registered successfully!');
+                    window.location.href = 'dashboard.html';  // Redirect to dashboard after all devices are registered
+                }
+            })
+            .catch(error => {
+                console.error('Error registering device:', error);
+                alert('Device registration failed. Please try again.');
+            });
+        });
+    </script>
+</body>
+</html>

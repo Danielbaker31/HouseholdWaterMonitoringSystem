@@ -2,7 +2,7 @@
 	(version 20231120)
 	(generator "eeschema")
 	(generator_version "8.0")
-	(uuid "6a9a2f2d-ff50-4f83-a859-9df867b86a61")
+	(uuid "634ceb7f-8b3e-4707-9e4b-dcb6f08fff47")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -4244,7 +4244,7 @@
 			)
 		)
 	)
-	(global_label "CLK_OUT3 (8 MHz)"
+	(global_label "CLK_OUT3 (1 MHz)"
 		(shape input)
 		(at 205.74 107.315 180)
 		(fields_autoplaced yes)
@@ -4354,7 +4354,7 @@
 			)
 		)
 	)
-	(global_label "CLK_OUT3 (8 MHz)"
+	(global_label "CLK_OUT3 (1 MHz)"
 		(shape input)
 		(at 70.485 103.505 180)
 		(fields_autoplaced yes)
@@ -4512,7 +4512,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 88.9 24.13 0)
 			(effects
 				(font
@@ -4576,7 +4576,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 193.675 97.155 0)
 			(effects
 				(font
@@ -4838,7 +4838,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 193.675 92.075 0)
 			(effects
 				(font
@@ -4887,7 +4887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "151dea88-6e44-471e-8db0-554fdc039b80")
-		(property "Reference" "R?"
+		(property "Reference" "R14"
 			(at 268.478 94.0378 0)
 			(effects
 				(font
@@ -4905,7 +4905,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 264.922 95.25 90)
 			(effects
 				(font
@@ -4941,7 +4941,7 @@
 		(instances
 			(project "MonitoringSystem_PCB"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1f6de532-219d-4a25-a19e-57d1272e7165"
-					(reference "R?")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -4973,7 +4973,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 45.72 107.95 0)
 			(effects
 				(font
@@ -5106,7 +5106,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 150.495 163.83 0)
 			(effects
 				(font
@@ -5306,7 +5306,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 36.195 22.86 0)
 			(effects
 				(font
@@ -5371,7 +5371,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PW0028A_N"
+		(property "Footprint" "TDC1000:PW0028A_N"
 			(at 90.805 106.045 0)
 			(effects
 				(font
@@ -5521,7 +5521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 135.255 188.595 0)
 			(effects
 				(font
@@ -5588,7 +5588,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 117.475 168.783 90)
 			(effects
 				(font
@@ -5656,7 +5656,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DBV0005A_N"
+		(property "Footprint" "OPA192IDBVR Amp:DBV0005A_N"
 			(at 120.65 170.815 0)
 			(effects
 				(font
@@ -5803,7 +5803,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
 			(at 48.895 36.195 0)
 			(effects
 				(font
@@ -5942,7 +5942,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 42.545 77.47 0)
 			(effects
 				(font
@@ -6012,7 +6012,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 29.845 93.98 0)
 			(effects
 				(font
@@ -6082,7 +6082,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 30.48 77.47 0)
 			(effects
 				(font
@@ -6350,7 +6350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 191.135 84.455 0)
 			(effects
 				(font
@@ -6486,7 +6486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 167.64 81.915 0)
 			(effects
 				(font
@@ -6538,7 +6538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8685993e-6d37-4146-8760-276aacdcc028")
-		(property "Reference" "C?"
+		(property "Reference" "C28"
 			(at 246.7991 155.0041 0)
 			(effects
 				(font
@@ -6556,7 +6556,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 244.475 156.21 0)
 			(effects
 				(font
@@ -6592,7 +6592,7 @@
 		(instances
 			(project "MonitoringSystem_PCB"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1f6de532-219d-4a25-a19e-57d1272e7165"
-					(reference "C?")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -6608,7 +6608,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8689813d-2961-4198-b016-19e8424865a3")
-		(property "Reference" "RG"
+		(property "Reference" "RG4"
 			(at 46.99 160.5745 90)
 			(effects
 				(font
@@ -6624,7 +6624,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 46.99 167.513 90)
 			(effects
 				(font
@@ -6660,7 +6660,7 @@
 		(instances
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1f6de532-219d-4a25-a19e-57d1272e7165"
-					(reference "RG")
+					(reference "RG4")
 					(unit 1)
 				)
 			)
@@ -6694,7 +6694,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 179.705 81.915 0)
 			(effects
 				(font
@@ -6762,7 +6762,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-8N"
+		(property "Footprint" "MAX660:SOIC127P600X175-8N"
 			(at 240.665 240.97 0)
 			(effects
 				(font
@@ -6902,7 +6902,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 64.77 187.325 0)
 			(effects
 				(font
@@ -6972,7 +6972,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 118.745 131.445 0)
 			(effects
 				(font
@@ -7165,7 +7165,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "R"
 			(at 140.843 116.1471 0)
 			(effects
 				(font
@@ -7174,7 +7174,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 137.287 114.935 90)
 			(effects
 				(font
@@ -7244,7 +7244,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 53.975 77.47 0)
 			(effects
 				(font
@@ -7312,7 +7312,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PW0014A_N"
+		(property "Footprint" "TDC7200:PW0014A_N"
 			(at 226.06 94.615 0)
 			(effects
 				(font
@@ -7420,7 +7420,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
 			(at 102.235 37.465 0)
 			(effects
 				(font
@@ -7475,7 +7475,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9c56823-7dc3-4e3b-ab1b-dda507a60f8d")
-		(property "Reference" "RG"
+		(property "Reference" "RG3"
 			(at 36.83 166.9245 90)
 			(effects
 				(font
@@ -7491,7 +7491,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 36.83 173.863 90)
 			(effects
 				(font
@@ -7527,7 +7527,7 @@
 		(instances
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1f6de532-219d-4a25-a19e-57d1272e7165"
-					(reference "RG")
+					(reference "RG3")
 					(unit 1)
 				)
 			)
@@ -7682,7 +7682,7 @@
 				)
 			)
 		)
-		(property "Value" "50 pF"
+		(property "Value" "C"
 			(at 135.255 127 90)
 			(effects
 				(font
@@ -7690,7 +7690,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 135.255 123.825 0)
 			(effects
 				(font
@@ -7826,7 +7826,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 128.905 131.445 0)
 			(effects
 				(font
@@ -8160,7 +8160,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 80.01 163.195 0)
 			(effects
 				(font
@@ -8285,7 +8285,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "R"
 			(at 120.65 126.365 90)
 			(effects
 				(font
@@ -8293,7 +8293,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 120.65 122.047 90)
 			(effects
 				(font
@@ -8345,7 +8345,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d51492e9-4f5a-4eef-bc64-018c3d660635")
-		(property "Reference" "C?"
+		(property "Reference" "C27"
 			(at 206.7941 149.9241 0)
 			(effects
 				(font
@@ -8363,7 +8363,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 204.47 151.13 0)
 			(effects
 				(font
@@ -8399,7 +8399,7 @@
 		(instances
 			(project "MonitoringSystem_PCB"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1f6de532-219d-4a25-a19e-57d1272e7165"
-					(reference "C?")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -8497,7 +8497,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DBV0005A_N"
+		(property "Footprint" "OPA192IDBVR Amp:DBV0005A_N"
 			(at 50.165 169.545 0)
 			(effects
 				(font
@@ -8576,7 +8576,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 107.315 175.133 90)
 			(effects
 				(font
@@ -8712,7 +8712,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 41.91 93.98 0)
 			(effects
 				(font

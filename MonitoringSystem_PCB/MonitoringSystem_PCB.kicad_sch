@@ -2822,6 +2822,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers hide)
 			(pin_names
@@ -4749,8 +4831,16 @@
 		(uuid "f44e1900-217b-48da-a7ff-c21a5e3e5b04")
 	)
 	(no_connect
+		(at 95.885 128.905)
+		(uuid "26b78023-78c5-407d-80bd-43030f0a38c8")
+	)
+	(no_connect
 		(at 203.2 32.385)
 		(uuid "3ace18d6-dccc-4923-9416-0240b1c612c1")
+	)
+	(no_connect
+		(at 55.245 161.925)
+		(uuid "3fa2d55d-2694-4df7-8977-304c71fd4279")
 	)
 	(no_connect
 		(at 203.2 24.765)
@@ -4759,6 +4849,42 @@
 	(no_connect
 		(at 203.2 27.305)
 		(uuid "45c7b2b7-d2fb-495e-8267-7fc1bbb9c0a3")
+	)
+	(no_connect
+		(at 55.245 136.525)
+		(uuid "4a86461e-c03d-45fe-94f2-5eb2d16557a3")
+	)
+	(no_connect
+		(at 55.245 159.385)
+		(uuid "4dca9c63-3510-42ff-90de-254849e9ee6c")
+	)
+	(no_connect
+		(at 55.245 118.745)
+		(uuid "59f0ac38-1982-46ba-90ad-f90a7bd45604")
+	)
+	(no_connect
+		(at 55.245 126.365)
+		(uuid "8cc5ec55-d5c1-4c5d-af8e-8e0514208317")
+	)
+	(no_connect
+		(at 95.885 131.445)
+		(uuid "96f6e1d1-94e9-4ebb-b5d6-c53c60792da6")
+	)
+	(no_connect
+		(at 55.245 111.125)
+		(uuid "9b096b58-394c-4e91-a22d-468a15cb540e")
+	)
+	(no_connect
+		(at 55.245 133.985)
+		(uuid "ad55f988-2400-43a2-a7a8-94acf374a3db")
+	)
+	(no_connect
+		(at 55.245 113.665)
+		(uuid "b65b1ddd-5239-4136-be89-229243baee31")
+	)
+	(no_connect
+		(at 55.245 116.205)
+		(uuid "be6233ac-d97a-49c2-a096-571f675d5328")
 	)
 	(no_connect
 		(at 203.2 29.845)
@@ -4873,6 +4999,16 @@
 			(type default)
 		)
 		(uuid "1dc1adcd-8409-4cb2-a3d3-274b3273c41a")
+	)
+	(polyline
+		(pts
+			(xy 119.38 163.83) (xy 176.53 164.465)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "21285a5e-7614-4aa0-b01a-12bde94b93d6")
 	)
 	(wire
 		(pts
@@ -5013,6 +5149,16 @@
 			(type default)
 		)
 		(uuid "4d78b418-1444-41ea-9d47-59fb9e3a0f66")
+	)
+	(polyline
+		(pts
+			(xy 118.745 163.83) (xy 118.745 196.85)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "4de52a72-1a41-4a52-8fc0-5a8f75469fb9")
 	)
 	(wire
 		(pts
@@ -5853,6 +5999,19 @@
 			(type default)
 		)
 		(uuid "fec97392-8580-4ace-8c1d-b6ce8a71eb41")
+	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 121.92 185.42 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "01bf7bcd-2c2f-4e93-a9a5-5cfce7866695")
 	)
 	(text "LCD Screen Connector"
 		(exclude_from_sim no)
@@ -6969,6 +7128,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 156.845 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13b57dd1-a0c7-4a40-ba4d-bfa189588871")
+		(property "Reference" "H2"
+			(at 159.385 179.5053 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 159.385 182.0422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 156.845 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.845 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.845 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "MonitoringSystem_PCB"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 241.3 136.525 0)
 		(unit 1)
@@ -7196,7 +7419,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 186.69 62.865 0)
 			(effects
 				(font
@@ -7332,7 +7555,7 @@
 				)
 			)
 		)
-		(property "Footprint" "local_footprints:ESP32-S3-WROOM-1_EXP"
+		(property "Footprint" "ESP32-S3-WROOM-N16:ESP32-S3-WROOM-1_EXP"
 			(at 55.245 103.505 0)
 			(effects
 				(font
@@ -7815,7 +8038,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 264.16 105.41 0)
 			(effects
 				(font
@@ -7957,7 +8180,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 15.24 109.855 0)
 			(effects
 				(font
@@ -7994,6 +8217,70 @@
 			(project "MonitoringSystem_PCB"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 156.845 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "516a3e80-6a6e-4b85-8921-e669849a9251")
+		(property "Reference" "H4"
+			(at 159.385 192.2053 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 159.385 194.7422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 156.845 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.845 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.845 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "MonitoringSystem_PCB"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -8145,7 +8432,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57121f1d-c971-4830-b974-00f7d706f0c9")
-		(property "Reference" "J?"
+		(property "Reference" "J5"
 			(at 216.5985 41.4803 0)
 			(effects
 				(font
@@ -8163,7 +8450,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN15_6288_7X5P7_AVX"
+		(property "Footprint" "ZIF_LCD_connector:CONN15_6288_7X5P7_AVX"
 			(at 207.01 18.415 0)
 			(effects
 				(font
@@ -8240,7 +8527,7 @@
 		(instances
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J?")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -8377,6 +8664,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 55.245 103.505 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69642dc2-56fc-49c9-8eea-d978dca26f6c")
+		(property "Reference" "#PWR023"
+			(at 48.895 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 51.1119 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.245 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.245 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 55.245 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "deb1a03f-8d22-446f-a8f4-1e800eeb6d7e")
+		)
+		(instances
+			(project "MonitoringSystem_PCB"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 27.305 109.855 0)
 		(unit 1)
@@ -8404,7 +8756,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 27.305 109.855 0)
 			(effects
 				(font
@@ -8675,7 +9027,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 264.16 118.745 0)
 			(effects
 				(font
@@ -8742,7 +9094,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 175.895 61.595 0)
 			(effects
 				(font
@@ -8812,7 +9164,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 173.355 50.165 0)
 			(effects
 				(font
@@ -9089,6 +9441,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 156.845 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9f9819b-378b-4245-b5f5-5f8279e19e74")
+		(property "Reference" "H1"
+			(at 159.385 173.1553 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 159.385 175.6922 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 156.845 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.845 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.845 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "MonitoringSystem_PCB"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "basic:R")
 		(at 142.875 133.985 0)
 		(unit 1)
@@ -9258,7 +9674,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 264.16 123.19 0)
 			(effects
 				(font
@@ -9523,7 +9939,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 166.37 42.545 0)
 			(effects
 				(font
@@ -9837,6 +10253,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 156.845 186.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de9d1ea8-17c9-42d3-b363-d4a1004e2640")
+		(property "Reference" "H3"
+			(at 159.385 185.8553 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 159.385 188.3922 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 156.845 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.845 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.845 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "MonitoringSystem_PCB"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 241.3 150.495 0)
 		(unit 1)
@@ -9930,7 +10410,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 264.16 114.3 0)
 			(effects
 				(font
@@ -10062,7 +10542,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 264.16 109.855 0)
 			(effects
 				(font
@@ -10199,7 +10679,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 264.16 127.635 0)
 			(effects
 				(font

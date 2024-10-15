@@ -140,6 +140,184 @@
 				)
 			)
 		)
+		(symbol "Device:Q_NPN_BEC"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_NPN_BEC"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "NPN transistor, base/emitter/collector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor NPN"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_NPN_BEC_0_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_NPN_BEC_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 5.715)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -1157,196 +1335,6 @@
 						)
 					)
 					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Transistor_BJT:BC817"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "BC817"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "NPN Transistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "BC817_0_1"
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BC817_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.715)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2421,6 +2409,12 @@
 		(uuid "125312f0-cee0-4186-a64c-886e7acef58e")
 	)
 	(junction
+		(at 125.095 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5439b7e2-f026-4dbc-91f6-5a5ef81fd274")
+	)
+	(junction
 		(at 88.9 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2431,12 +2425,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96b5be96-fbb9-4f03-8acc-6d7331f000c7")
-	)
-	(junction
-		(at 124.46 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9ecac6a9-07f2-4dcf-a0e2-d4ea113e9bae")
 	)
 	(junction
 		(at 62.23 127.635)
@@ -2528,7 +2516,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 105.41) (xy 124.46 119.38)
+			(xy 125.095 105.41) (xy 125.095 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2586,9 +2574,19 @@
 		)
 		(uuid "44c83068-87f8-4d04-8bef-44e081ef5a8d")
 	)
+	(polyline
+		(pts
+			(xy 17.78 80.01) (xy 276.225 80.645)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "4ac1c7e9-7ce2-49f9-bc75-b23af24bcca6")
+	)
 	(wire
 		(pts
-			(xy 122.555 111.76) (xy 139.7 111.76)
+			(xy 122.555 111.76) (xy 140.335 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2628,7 +2626,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 111.76) (xy 139.7 110.49)
+			(xy 140.335 111.76) (xy 140.335 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2698,7 +2696,17 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 119.38) (xy 124.46 119.38)
+			(xy 125.095 119.38) (xy 139.065 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa6700ae-2719-49c3-b823-74fa69fb3060")
+	)
+	(wire
+		(pts
+			(xy 119.38 119.38) (xy 125.095 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2848,16 +2856,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 119.38) (xy 139.065 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f46d9fcf-4c60-429c-aef4-a7d596ddaace")
-	)
-	(wire
-		(pts
 			(xy 74.295 127.635) (xy 62.23 127.635)
 		)
 		(stroke
@@ -2865,6 +2863,32 @@
 			(type default)
 		)
 		(uuid "fd576832-ad4e-4167-9c16-0286d3329ad8")
+	)
+	(text "Micro-USB to UART Bridge"
+		(exclude_from_sim no)
+		(at 168.275 112.395 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "07b09fe5-4c5d-4c32-814a-08d590c3443a")
+	)
+	(text "Micro-USB Connector"
+		(exclude_from_sim no)
+		(at 90.17 27.94 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "69f48fab-d075-40c9-ba0a-17a82575ffbc")
 	)
 	(label "USB_D-"
 		(at 107.95 53.34 180)
@@ -2912,7 +2936,7 @@
 	)
 	(global_label "CHIP_PU"
 		(shape input)
-		(at 139.7 100.33 0)
+		(at 140.335 100.33 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2922,7 +2946,7 @@
 		)
 		(uuid "1db7c6f6-8dc3-4238-af31-b89184156f6a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.7286 100.33 0)
+			(at 151.3636 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3059,6 +3083,79 @@
 			(project "MonitoringSystem_PCB"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6009ba97-19f7-4ca6-b0d1-715a2fb0321a"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_NPN_BEC")
+		(at 136.525 126.365 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b00536f-54d1-47bd-8c43-1d7d41a7c590")
+		(property "Reference" "Q2"
+			(at 141.3764 127.1997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS8050-G"
+			(at 141.3764 124.6628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 141.605 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 136.525 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 136.525 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf028a32-8018-48d2-a69a-d37b45bf2700")
+		)
+		(pin "2"
+			(uuid "12b708ac-954b-4f53-82b7-8d14693293f3")
+		)
+		(pin "3"
+			(uuid "6e863f24-5b5d-498e-804f-345643cf453f")
+		)
+		(instances
+			(project "MonitoringSystem_PCB"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6009ba97-19f7-4ca6-b0d1-715a2fb0321a"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -3883,6 +3980,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Q_NPN_BEC")
+		(at 137.795 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a791ec8e-54dc-4253-b4da-556f7819adb3")
+		(property "Reference" "Q1"
+			(at 142.6464 104.5753 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS8050-G"
+			(at 142.6464 107.1122 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 142.875 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.795 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.795 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4198f5e-6193-4bf0-821d-196c2e61412a")
+		)
+		(pin "2"
+			(uuid "83a33a09-f6c8-47a2-97d8-d64b830e72aa")
+		)
+		(pin "3"
+			(uuid "408a85c0-0e75-4a9b-807d-d6f5806d5404")
+		)
+		(instances
+			(project "MonitoringSystem_PCB"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6009ba97-19f7-4ca6-b0d1-715a2fb0321a"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:SZESD9B5.0ST5G")
 		(at 92.71 52.705 180)
 		(unit 1)
@@ -3952,7 +4122,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 128.27 105.41 90)
+		(at 128.905 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3961,7 +4131,7 @@
 		(fields_autoplaced yes)
 		(uuid "a8fad3ad-a825-45a4-83bc-6754cc9b7c7f")
 		(property "Reference" "R2"
-			(at 128.27 100.2495 90)
+			(at 128.905 100.2495 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3969,7 +4139,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 128.27 102.6738 90)
+			(at 128.905 102.6738 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3977,7 +4147,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 107.188 90)
+			(at 128.905 107.188 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3986,7 +4156,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.27 105.41 0)
+			(at 128.905 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3995,7 +4165,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 128.27 105.41 0)
+			(at 128.905 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4170,82 +4340,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC817")
-		(at 136.525 126.365 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cec96fdc-4aba-4ae9-ba78-d68447c0dcde")
-		(property "Reference" "Q1"
-			(at 141.3764 127.5772 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC817"
-			(at 141.3764 125.1529 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 141.605 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
-			(at 136.525 126.365 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 136.525 126.365 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cc391c0a-2b50-4e7b-ba37-3c4167c67f5a")
-		)
-		(pin "3"
-			(uuid "e70ccc2f-582b-40e1-ab24-fd8fffbb8eb7")
-		)
-		(pin "1"
-			(uuid "01aa64c9-2f63-40d5-aa45-ca6ba1dfc191")
-		)
-		(instances
-			(project "MonitoringSystem_PCB"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6009ba97-19f7-4ca6-b0d1-715a2fb0321a"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 88.9 95.25 0)
 		(unit 1)
@@ -4306,82 +4400,6 @@
 			(project "MonitoringSystem_PCB"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6009ba97-19f7-4ca6-b0d1-715a2fb0321a"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC817")
-		(at 137.16 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dac229b0-4d9e-475c-ba33-d4d4ef4e668a")
-		(property "Reference" "Q2"
-			(at 142.0114 104.1978 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC817"
-			(at 142.0114 106.6221 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 142.24 107.315 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3e3e37f8-a719-4db1-b1f0-f143007d77cf")
-		)
-		(pin "3"
-			(uuid "5f2cdfe2-065f-446c-b7c5-fdecee1ebce8")
-		)
-		(pin "1"
-			(uuid "80f8e8da-aa49-497e-a46d-13422e4258ed")
-		)
-		(instances
-			(project "MonitoringSystem_PCB"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6009ba97-19f7-4ca6-b0d1-715a2fb0321a"
-					(reference "Q2")
 					(unit 1)
 				)
 			)

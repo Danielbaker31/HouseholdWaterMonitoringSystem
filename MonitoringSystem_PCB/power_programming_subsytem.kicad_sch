@@ -2216,6 +2216,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.715 154.305) (xy 133.985 154.305)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "079d7690-f60d-4b09-9280-925c7659538a")
+	)
+	(wire
+		(pts
 			(xy 128.905 53.34) (xy 130.81 53.34)
 		)
 		(stroke
@@ -2243,6 +2253,16 @@
 			(type default)
 		)
 		(uuid "22d5e0f6-75e8-4c0f-886f-dad430aaa768")
+	)
+	(wire
+		(pts
+			(xy 120.015 154.305) (xy 125.095 154.305)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "244bed4e-1b29-4a80-8f25-3126ae03f21f")
 	)
 	(wire
 		(pts
@@ -2336,6 +2356,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 121.92) (xy 132.715 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53ff0b2f-18d5-45bd-80f1-9ee0d8db1b94")
+	)
+	(wire
+		(pts
 			(xy 69.85 116.84) (xy 69.85 120.65)
 		)
 		(stroke
@@ -2373,6 +2403,16 @@
 			(type default)
 		)
 		(uuid "647892af-35b6-4866-a2e7-9cba8bb39a47")
+	)
+	(wire
+		(pts
+			(xy 121.285 121.92) (xy 123.19 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6820dab7-6889-4dfb-acc9-d417022ed77b")
 	)
 	(wire
 		(pts
@@ -2483,16 +2523,6 @@
 			(type default)
 		)
 		(uuid "b77082e3-f695-4ce0-be2f-3eaf6f8aa711")
-	)
-	(wire
-		(pts
-			(xy 125.73 153.035) (xy 120.015 153.035)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb4c9d7c-ccec-460a-ac93-2ec688551899")
 	)
 	(wire
 		(pts
@@ -2646,6 +2676,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.015 154.305) (xy 120.015 153.035)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8da90fa-8d5b-4d6c-b45f-7fa907be0ed6")
+	)
+	(wire
+		(pts
 			(xy 55.245 149.225) (xy 43.18 149.225)
 		)
 		(stroke
@@ -2739,7 +2779,7 @@
 	)
 	(global_label "CHIP_PU"
 		(shape input)
-		(at 121.285 121.92 0)
+		(at 132.715 121.92 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2749,7 +2789,7 @@
 		)
 		(uuid "1db7c6f6-8dc3-4238-af31-b89184156f6a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 132.3136 121.92 0)
+			(at 143.7436 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2761,7 +2801,7 @@
 	)
 	(global_label "GPIO0_STRAPPING"
 		(shape input)
-		(at 125.73 153.035 0)
+		(at 133.985 154.305 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2771,7 +2811,7 @@
 		)
 		(uuid "49b657e4-1d32-4f41-b614-4db5979d087d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 145.6486 153.035 0)
+			(at 153.9036 154.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3164,6 +3204,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 128.905 154.305 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37612818-d379-4061-ae67-74fb99521f98")
+		(property "Reference" "R15"
+			(at 128.905 149.1445 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 128.905 151.5688 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 128.905 156.083 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.905 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 128.905 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3f817a8-6f8c-4f89-8aee-59e6c35fd04f")
+		)
+		(pin "2"
+			(uuid "245d1b28-302c-4c8d-87ad-30d51b7832f1")
+		)
+		(instances
+			(project "MonitoringSystem_PCB"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6009ba97-19f7-4ca6-b0d1-715a2fb0321a"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 43.18 144.78 0)
 		(unit 1)
@@ -3249,7 +3356,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 108.585 145.2188 90)
 			(effects
 				(font
@@ -3849,6 +3956,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 127 121.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6950c3c-f441-450b-b26a-464b88ab62e3")
+		(property "Reference" "R16"
+			(at 127 116.7595 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 127 119.1838 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 127 123.698 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00394dab-1e29-4fcc-914c-8332e2d95ef5")
+		)
+		(pin "2"
+			(uuid "ed130747-f787-45a8-a53e-9be6cd27b1ba")
+		)
+		(instances
+			(project "MonitoringSystem_PCB"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6009ba97-19f7-4ca6-b0d1-715a2fb0321a"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Q_NPN_BEC")
 		(at 118.745 127 0)
 		(unit 1)
@@ -4007,7 +4182,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 109.855 124.2638 90)
 			(effects
 				(font

@@ -79,7 +79,7 @@
 - Finish and submit design document
 
 **Tasks Completed**:
--
+- completed
 
 **Challenges**:
 - Finding sensors that fit within budget constraints.

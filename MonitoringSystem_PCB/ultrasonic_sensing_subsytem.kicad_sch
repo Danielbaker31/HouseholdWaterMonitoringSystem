@@ -2,7 +2,7 @@
 	(version 20231120)
 	(generator "eeschema")
 	(generator_version "8.0")
-	(uuid "634ceb7f-8b3e-4707-9e4b-dcb6f08fff47")
+	(uuid "0d1942a9-fca7-4e13-9068-874520b02705")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -4035,7 +4035,7 @@
 		)
 		(uuid "d9bfc1a1-ad80-41a2-b4d7-9c112bb3b4de")
 	)
-	(label "ULTRASONIC_1_IN"
+	(label "ULTRASONIC_2_IN"
 		(at 70.485 113.665 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6963,7 +6963,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1 nF"
+		(property "Value" "C"
 			(at 121.0691 132.6634 0)
 			(effects
 				(font
@@ -7817,7 +7817,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "51 pF"
+		(property "Value" "C"
 			(at 131.2291 132.6634 0)
 			(effects
 				(font

@@ -59,7 +59,13 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "solder_mask_bridge|133285000|109728000|81cd4cbd-4efe-4311-a83a-542f3195d053|9e717660-05b5-4210-83fd-027a8795f7a7",
+        "solder_mask_bridge|135675199|110325072|540f5ad3-7c24-4fef-8a51-1bc44d783f88|32b98f68-d0c1-4eee-825c-03fe58010157",
+        "solder_mask_bridge|135835000|109578000|540f5ad3-7c24-4fef-8a51-1bc44d783f88|32b98f68-d0c1-4eee-825c-03fe58010157",
+        "solder_mask_bridge|158369000|115431000|90785377-7682-4792-994a-3fab1d2cb481|39bd8c3a-e778-4c32-816a-7c2d1398b4db",
+        "solder_mask_bridge|160269000|114681000|1e9ea287-b9ce-4747-b3d4-b96a16f440a1|9e2ab40c-e4ed-4ea6-becb-95eae3e854dd"
+      ],
       "meta": {
         "version": 2
       },
@@ -500,7 +506,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerber/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

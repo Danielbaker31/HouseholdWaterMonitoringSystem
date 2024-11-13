@@ -9,4 +9,5 @@
   (lib (name "ZIF_LCD_connector")(type "KiCad")(uri "${KIPRJMOD}/parts/zif connector for lcd/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "ESP32-S3-WROOM-N16")(type "KiCad")(uri "${KIPRJMOD}/parts/ESP32_S3_WROOM_1_N16/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "USB-B")(type "KiCad")(uri "${KIPRJMOD}/parts/USB-B/footprints.pretty")(options "")(descr ""))
+  (lib (name "LCD")(type "KiCad")(uri "${KIPRJMOD}/parts/LCD.pretty")(options "")(descr ""))
 )

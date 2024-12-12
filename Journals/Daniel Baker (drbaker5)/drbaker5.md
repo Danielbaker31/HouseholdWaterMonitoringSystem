@@ -66,28 +66,44 @@
 - Finish and submit design document  
 
 **Tasks Completed**:  
-- Completed and submitted the design document  
+- Submitted project proposal revision
+- Completed and submitted the design document
+    - Created draft physical design
+        - ie: ![physical_design error](physical_design.jpg)
+    - researched and finalized more specified ideas for each subsystem, and created RV tables for each
+        - ie: ![RV error](RV.jpg)
+    - finalized flow rate formula for ultrasonic subsystem
+        - ![formula error](formula.jpg)
 
+---
 
 ## Week 5: [10/7-10/11]  
 **Objectives for the Week**:  
-- Research additional components needed for the project  
-- Begin planning software development timeline  
+- Practice for Design Review
+- Start PCB
 
 **Tasks Completed**:  
-- Researched ultrasonic sensors and compatible microcontrollers  
-- Created a draft software development timeline  
+- Practiced and completed design review presentation
+    - Learned of timing challenges for flow rate, thus the need for very presiced time meaurement ICs
+        - landed on TDC1000 and TDC7200 for time to digital conversion
+- Started Microcontroller Subsystem for PCB
+    - ![MCU error](MCU.jpg) 
 
 ---
 
 ## Week 6: [10/14-10/18]  
 **Objectives for the Week**:  
-- Finalize component selection  
-- Develop initial hardware schematic  
+- Complete and order first draft of PCB
+- complete teamwork evaluation 1
 
-**Tasks Completed**:  
-- Selected the ESP32-S3-WROOM-N16 and ultrasonic sensor H2KMPYA1000600  
-- Created the first version of the hardware schematic  
+**Tasks Completed**:
+- Completed Power and Programming Subsystem
+    - ![power_programming_1 error](power_programming_1.jpg)
+- Completed Ultrasonic Subsystem
+    - ![ultrasonic_1 error](ultrasonic_1.jpg)
+- Completed first draft of routed PCB 
+    - ![PCB_1 error](PCB_1.jpg)
+    
 
 ---
 

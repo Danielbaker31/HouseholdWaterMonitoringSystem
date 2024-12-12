@@ -65,7 +65,7 @@ During this week, I focused on completing the rough draft of the design review b
 and subsystem requirements. My contribution was developing the Requirement and Verification (R&V) tables for the software 
 subsystems. This included detailing the expected functionalities of the API endpoints, database operations, and frontend components, 
 along with the specific tests to verify their performance. For instance, I specified that the API endpoints, implemented using AWS
-Lambda, should handle requests with a latency of less than 200ms under normal load conditions and outlined verification steps using  tools like Postman or mock testing frameworks [1][2].
+Lambda, should handle requests with a latency of less than 200ms under normal load conditions and outlined verification steps using   mock testing frameworks [1][2].
 
 Additionally, I collaborated with my teammate Daniel to work on the microcontroller and LCD subsystem descriptions. Together, 
 we defined the core requirements for these hardware components, such as the ESP32 microcontroller's ability to accurately process 
@@ -107,7 +107,7 @@ This week, we worked closely with our TA to refine the project proposal and ensu
 
 Additionally, I created quantifiable high-level design requirements to ensure the project’s objectives were clearly defined and measurable. These included goals such as achieving real-time data processing, maintaining a low-latency connection between the ESP32 and the cloud, and ensuring data accuracy within a 5% margin.
 
-As part of the design review process, I worked with my teammate Jack to perform critical calculations for the ultrasonic sensor subsystem. These calculations focused on determining the time-of-flight measurement accuracy and its correlation to water flow rate. Using the ESP32's GPIO pins and built-in timers, we confirmed that the microcontroller could handle the required precision for these calculations without significant latency [1]. Together, we ensured the ultrasonic sensor integration was feasible and aligned with the system's design goals.
+As part of the design review process, I worked with my teammate Jack to perform calculations for the ultrasonic sensor subsystem. These calculations focused on determining the time-of-flight measurement accuracy and its correlation to water flow rate. Using the ESP32's GPIO pins and built-in timers, we confirmed that the microcontroller could handle the required precision for these calculations without significant latency [1]. Together, we ensured the ultrasonic sensor integration was feasible and aligned with the system's design goals.
 
 By the end of the week, we finalized and submitted the design review, incorporating feedback from the TA and adding new subsystems as needed. This collaborative effort ensured our design was robust and well-documented, setting the stage for further development.
 
@@ -176,7 +176,7 @@ The images below are our tables and one of our temples as an example.
 ![userTable](images/userTable.png)
 
 **Challenges**:  
-One major challenge we faced was the inability to parse JSON payloads consistently, which caused the frontend to crash during initial testing. The issue stemmed from differences in the payload formats sent by the ESP32 and the way the Lambda functions were interpreting them. To address this, we standardized the JSON payload structure and ensured that the Lambda functions processed them correctly. For example, we unified field names and data types across the entire system. This approach resolved the issue and improved the stability of our data flow pipeline.
+One major challenge we faced was the inability to parse JSON payloads consistently, which caused the frontend to crash during initial testing. The issue was from differences in the payload formats sent by the ESP32 and the way the Lambda functions were interpreting them. To address this, we standardized the JSON payload structure and ensured that the Lambda functions processed them correctly. For example, we combined field names and data types across the entire system. This approach resolved the issue and improved the stability of our data flow pipeline.
 
 Below is a picture of the error I was debigging using the chrome developer tools.
 
@@ -224,7 +224,7 @@ Here is a picture of our front end:
 
 
 **Challenges**: 
-One of the key challenges we faced this week was with the CAD design of the sensor mount. While the initial design was functional, it did not account for all the physical constraints, such as varying pipe diameters and optimal sensor positioning. This led to issues with sensor stability and alignment during testing. To address this, we plan to iterate on the CAD model, incorporating adjustable features to accommodate different setups and improve usability.
+One of the key challenges we faced this week was with the CAD design of the sensor mount. While the initial design was functional, it did not account for all the physical constraints, such as varying pipe diameters and optimal sensor positioning. This led to issues with sensor stability and alignment during testing. To address this, we plan to iterate on the CAD model, incorporating adjustable features to use different setups and improve usability.
 
 Here is a picture of our initial mount:
 ![initialmount](images/initialmount.png)
@@ -287,7 +287,7 @@ One significant challenge this week was the faint signal observed on the oscillo
 - Discuss Design changes
 
 **Tasks Completed**:
-This week, I worked closely with Jack and Daniel to advance the hardware and software components of our project. For the hardware, we soldered the TDC chips onto the PCB. Jack and Daniel handled the soldering process, ensuring proper connections for the TDC7200 chips, while I focused on programming the TDC to communicate with the ESP32. Unfortunately, we encountered a major challenge with the SPI communication protocol. Despite multiple attempts to establish communication, the ESP32 could not successfully send or receive data from the TDC chips, leaving us temporarily stuck on this front [1].
+This week, I worked closely with Jack and Daniel to work on the hardware and software components of our project. For the hardware, we soldered the TDC chips onto the PCB. Jack and Daniel handled the soldering process, ensuring proper connections for the TDC7200 chips, while I focused on programming the TDC to communicate with the ESP32. Unfortunately, we saw a huge challenge with the SPI communication protocol. Despite multiple attempts to establish communication, the ESP32 could not successfully send or receive data from the TDC chips, leaving us temporarily stuck on this front [1].
 
 To address previous issues with signal reliability, we ordered another set of ultrasonic sensors. However, these new sensors exhibited the same faint signal problem as the earlier ones. As a result, we placed an order for a different model of sensors, hoping to resolve the issue in the next iteration of testing.
 
@@ -298,7 +298,7 @@ This is a snippet of the code we were using to test the TDC as well as the Ultra
 
 
 **Challenges**:  
-The primary challenge this week was the failure of SPI communication between the ESP32 and the TDC chips. This issue halted our ability to collect precise timing data from the ultrasonic sensors, which is crucial for our system. Additionally, the persistent problem of faint signals from the ultrasonic sensors further delayed progress on the hardware side. These setbacks highlight the need for further testing and potentially rethinking our sensor and communication strategy.
+The primary challenge this week was the failure of SPI communication between the ESP32 and the TDC chips. This issue stopped our ability to collect precise timing data from the ultrasonic sensors, which is important for our system. Additionally, the  problem of faint signals from the ultrasonic sensors  delayed progress on the hardware side. These setbacks highlight the need for further testing and potentially rethinking our sensor and communication strategy.
 
 
 **Next Steps**:  
@@ -318,7 +318,7 @@ We will continue to debug the SPI communication issue with the TDC chips and exp
 - fix ultrasonic sensors
 
 **Tasks Completed**:  
-This week, we made progress on both hardware and software components, though challenges persisted with the ultrasonic sensors. Jack ordered another set of ultrasonic sensors rated for 5V, hoping to address the faint signal issue. Unfortunately, testing revealed that the new sensors faced interference issues due to RF waves and antenna misalignment. We explored several methods to address this problem, including breadboarding with operational amplifiers (op-amps) to boost the signal strength and increasing the supply voltage. Despite these efforts, we were unable to achieve consistent results, highlighting the need for further troubleshooting or alternative sensor solutions.
+This week, we made progress on both hardware and software components, though challenges persisted with the ultrasonic sensors. Jack ordered another set of ultrasonic sensors rated for 5V, hoping to address the faint signal issue. Unfortunately, testing revealed that the new sensors faced interference issues due to RF waves. We explored several methods to address this problem, including breadboarding with operational amplifiers (op-amps) to boost the signal strength and increasing the supply voltage. Despite these efforts, we were unable to achieve consistent results, highlighting the need for further troubleshooting or alternative sensor solutions.
 
 Here's a picture of the TDC circuit from the Texas Instrument document that we were reffering to:
 ![TDCCircuit](images/TDCCircuit.png)
@@ -326,11 +326,11 @@ Here's a picture of the TDC circuit from the Texas Instrument document that we w
 
 Daniel and I used the breakout board to test other hardware components. During these tests, we confirmed that the ESP32 could be soldered properly onto the PCB, showing promising results for future integration. This verification step was crucial in ensuring the ESP32’s stability and functionality within the final system.
 
-On the software side, most of the work was completed. The frontend and backend were fully integrated, and all core functionalities, including user login, profile creation, and device data handling, were operational. Looking ahead, I plan to focus on implementing features to handle power interruptions and network outages. These enhancements will improve the robustness of the system by ensuring data consistency and minimizing disruptions in real-time monitoring.
+On the software side, most of the work was completed. The frontend and backend were fully integrated, and all core functionalities, including user login, profile creation, and device data handling, were operational. Looking ahead, I plan to focus on implementing features to handle power interruptions and network outages. These enhancements will improve our system by ensuring data consistency and minimizing disruptions in real-time monitoring.
 
 
 **Challenges**:  
-The primary challenge this week was the continued issue with the ultrasonic sensors. The interference caused by RF waves and antenna misalignment prevented the sensors from functioning reliably. Attempts to amplify the signal using op-amps and increasing the supply voltage did not resolve the problem. This required extensive breadboarding and testing, but a conclusive solution remains pending.
+The primary challenge this week was the continued issue with the ultrasonic sensors. The interference caused by RF waves  prevented the sensors from functioning reliably. Trying to amplify the signal using op-amps and increasing the supply voltage did not resolve the problem. This required extensive breadboarding and testing, but a conclusive solution remains pending.
 
   
 
@@ -400,7 +400,7 @@ Picture of Front End:
 
 
 **Challenges**:  
-The holiday schedule posed some logistical challenges, as our team was split between working remotely and onsite. Additionally, implementing the flash storage required a deep understanding of the ESP32’s internal memory structure. Ensuring efficient data storage and retrieval without excessive wear on the flash memory was a critical challenge, which I addressed through careful coding and testing. The frontend changes also required integrating new data points and alerts into the existing UI without disrupting its flow.
+The holiday schedule gave us some logistical challenges, as our team was split working remotely. Additionally, implementing the flash storage required a good understanding of the ESP32’s internal memory structure. Ensuring efficient data storage and retrieval without excessive wear on the flash memory was a critical challenge, which I addressed through careful coding and testing. The frontend changes also required integrating new data points and alerts into the existing UI without disrupting its flow.
 
 **Next Steps**:  
 We will demo next week and work on our final presenation.
@@ -419,7 +419,7 @@ We will demo next week and work on our final presenation.
 - Work on final presentation
 
 **Tasks Completed**:  
-This week, we successfully demoed our project, showcasing the functionality of the water monitoring system to our peers and instructors. The demo highlighted key features such as tap detection, real-time data logging, and the integrated LCD display for user feedback. Following the demo, we began preparing for our presentation next week by outlining the key points we want to emphasize, such as the challenges we overcame, the system's robustness, and its scalability. I also attended a mock presentation session and peer demos, which provided valuable insights into effective presentation techniques and potential areas of improvement for our own project. These activities helped us refine and ensure our presentation is engaging and well-structured.
+This week, we successfully demoed our project, showcasing the functionality of the water monitoring system to our peers and instructors. The demo highlighted key features such as tap detection, real-time data logging, and the integrated LCD display for user feedback. Following the demo, we began preparing for our presentation next week by outlining the key points we want to emphasize, such as the challenges we overcame, the system's functionality, and its scalability. I also attended a mock presentation session and peer demos, which provided valuable insights into effective presentation techniques and potential areas of improvement for our own project. These activities helped us refine and ensure our presentation is engaging and well-structured.
 
 **Next Steps**:  
 Final presenation next week.
@@ -453,6 +453,3 @@ The Household Water Monitoring System successfully integrates hardware and softw
 
 **Next Steps**:  
 - Continue optimizing system design for cost and performance  
-- Explore commercialization opportunities  
-
-**Final Grade (Self-Assessment)**: A  

@@ -5,18 +5,28 @@
 ## Project Overview
 **Project Name**: Household Water Monitoring System  
 **Team Member(s)**: Daniel Baker (drbaker5)
-**Date Started**: [Insert Start Date]  
+**Date Started**: [9/9/24]  
 **Course**: ECE445 Senior Design  
 
 ---
 
 ## Table of Contents
-1. [Week 1](#week-1)
-2. [Week 2](#week-2)
-3. [Week 3](#week-3)
-4. [Week 4](#week-4)
-5. [Additional Weeks...](#additional-weeks)
-6. [Final Reflection](#final-reflection)
+## Table of Contents
+1. [Week 1](#week-1-99-913)
+2. [Week 2](#week-2-916-920)
+3. [Week 3](#week-3-923-927)
+4. [Week 4](#week-4-930-104)
+5. [Week 5](#week-5-107-1011)
+6. [Week 6](#week-6-1014-1018)
+7. [Week 7](#week-7-1021-1025)
+8. [Week 8](#week-8-1028-111)
+9. [Week 9](#week-9-114-118)
+10. [Week 10](#week-10-1111-1115)
+11. [Week 11](#week-11-1118-1122)
+12. [Week 12](#week-12-1125-1129)
+13. [Week 13](#week-13-122-126)
+14. [Week 14](#week-14-129-1213)
+
 
 ---
 
